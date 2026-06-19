@@ -13,7 +13,8 @@ To reproduce the lab, I used the following tools:
 
 
 Extract data:
-```steghide extract -sf stego_file.jpg```
+```bash
+steghide extract -sf stego_file.jpg```
 
 ### Password Recovery (John the Ripper)
 - Convert zip to hash:
@@ -21,5 +22,5 @@ Extract data:
   zip2john protected.zip > hash.txt```
 
 Crack the hash:
-
-```john hash.txt --wordlist=/usr/share/wordlists/rockyou.txt```
+```bash
+john hash.txt --wordlist=/usr/share/wordlists/rockyou.txt```
