@@ -13,12 +13,12 @@ To reproduce the lab, I used the following tools:
 
 
 Extract data:
-steghide extract -sf stego_file.jpg
+```steghide extract -sf stego_file.jpg```
 
 ### Password Recovery (John the Ripper)
 - Convert zip to hash:
   ```bash
-```zip2john protected.zip > hash.txt```
+zip2john protected.zip > hash.txt```
 
 Crack the hash:
 
